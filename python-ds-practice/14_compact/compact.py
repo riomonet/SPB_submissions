@@ -4,3 +4,9 @@ def compact(lst):
         >>> compact([0, 1, 2, '', [], False, (), None, 'All done'])
         [1, 2, 'All done']
     """
+    new_lst = []
+    for element in lst:
+        if (element):
+            new_lst.append(element)
+
+    return new_lst
