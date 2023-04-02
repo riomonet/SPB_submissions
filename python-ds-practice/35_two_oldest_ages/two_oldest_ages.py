@@ -22,12 +22,14 @@ def two_oldest_ages(ages):
     # can take *any* type of list-like-thing, and returns a new, sorted list
     # from it.
 
-    ages.sort()
-    max = ages[len(ages) - 1]
-    for num in ages[::-1]:
-        if num < max:
-            return (num, max)
+    # ages.sort()
+    # max = ages[len(ages) - 1]
+    # for num in ages[::-1]:
+    #     if num < max:
+    #         return (num, max)
     
-    
+    s = set(ages)
+    return tuple(sorted(s)[-2:])
+
 
 
