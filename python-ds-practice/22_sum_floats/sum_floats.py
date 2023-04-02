@@ -18,3 +18,7 @@ def sum_floats(nums):
             sum += num
 
     return sum
+
+
+#can also use comprehension to make a list of floats and the sum it using 
+# the builtin sum() function, like there was a builtin max function as well
