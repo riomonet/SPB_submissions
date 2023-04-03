@@ -21,16 +21,19 @@ class SerialGenerator:
     """
 
     def __init__(self, seed):
+        '''initialize starting value'''
         self.seed = seed
         self.current = seed
         
 
     def generate(self):
+        '''return current value and increment state'''
         val = self.current
         self.current += 1
         return val
 
     def reset(self):
+        '''reset to starting value'''
         self.current = self.seed
         
 
