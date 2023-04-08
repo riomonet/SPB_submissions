@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>MADLIBS INPUTS</title>
+    </head>
+    <body>
+
+	<h2>Please enter the following parts of speach below</h2>
+	<form type="submit" action="output">
+	    {%for word in words%}
+	    <div>
+		<input name="{{word}}" type="text"  placeholder="{{word}}" />
+	    </div>
+	    {%endfor%}
+	    <br/>
+	    <button>Submit</button>
+	</form>
+    </body>
+</html>
